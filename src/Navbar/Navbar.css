@@ -1,0 +1,93 @@
+/* App.css */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Adjust the height as needed */
+    width: 60px; /* Set the width of the sidebar */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  li {
+    margin-bottom: 20px; /* Adjust the spacing between icons */
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Example: Replace these with the actual classes or icons you use */
+  .fa-home:before {
+    content: "\f015"; /* Replace this with the code for your home icon */
+  }
+  
+  .fa-search:before {
+    content: "\f002"; /* Replace this with the code for your search icon */
+  }
+  
+  .fa-envelope:before {
+    content: "\f0e0"; /* Replace this with the code for your envelope icon */
+  }
+  
+  .fa-bell:before {
+    content: "\f0f3"; /* Replace this with the code for your bell icon */
+  }
+  
+  .fa-user:before {
+    content: "\f007"; /* Replace this with the code for your user icon */
+  }
+
+  
+  @media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 20px;
+        height: 60px; /* Adjust the height as needed */
+        width: 90%; /* Take full width */
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* z-index: 9999; */
+        /* padding: 20px; */
+        border-radius: 4rem;
+        margin-top: 90vh;
+        margin-bottom: 2vh;
+    }
+  
+    ul {
+      flex-direction: row;
+      list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+    }
+  
+    li {
+      /* margin-right: 10px; /* Adjust spacing between icons */
+      /* margin-bottom: 0; */ 
+      margin: 0 5px;
+    }
+  }

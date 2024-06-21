@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 100vw;
+    gap: 3rem;
+    padding: 20px;
+    background-color: #D9D9D9;
+}
+.home .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.home .left{
+    flex: 1;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* left: 20vw; */
+}
+.home .boxb{
+    height: 50vh;
+    width: 50vh;
+    background-color: black;
+    position: absolute;
+    left: 23vw;
+    top: 28vh;
+    border-radius: 2rem;
+}
+
+
+.home .box{
+    z-index: 999;
+    height: 50vh;
+    width: 50vh;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 15px 15px 4px 4px rgba(0, 0, 0, 01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.home .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0vw;
+}
+.typed-fade-out,.typed-cursor{
+    font-size: 70px;
+}
+.home h1{
+    font-size: 70px;
+}
+.home .span{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: lighter;
+    color: grey;
+}
+.home .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 4rem; */
+    margin-left: -11vw;
+}
+.home button{
+    padding: 20px;
+    font-size: 20px;
+    width: 12vw;
+    border-radius: 0rem;
+    box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 01);
+    cursor: pointer;
+}
+.home img{
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+    /* margin-left: 5vw; */
+    /* object-fit: cover; */
+}
+
+  
+
+/* Your existing CSS */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    
+    .home .box{
+        height: 30vh;
+        width: 30vh;
+    }
+    .home img{
+        height: 20vh;
+        width: 20vh;
+    }
+    .home .boxb{
+        height: 30vh;
+        width: 30vh;
+        top: 8vh;
+        left: 15vh;
+
+    }
+    .home .container{
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: -20vh;
+        justify-content: space-between;
+    }
+
+
+    .home .right{
+        text-align: center;
+        font-size: smaller;
+        gap: 0.5rem;
+    }
+    .home h1{
+        font-size: 45px;
+        text-align: center;
+        margin-left: 5vw;
+    }
+    .home .span{
+        font-size: 22px;
+        /* margin-left: 4vh; */
+        /* padding: 20px; */
+    }
+    .home .buttons{
+        gap: 2rem;
+        /* margin-top: 10vh; */
+    }
+    .home button{
+        width: 35vw;
+        margin-left: 5vh;
+        /* font-size: small; */
+    }
+    .home .dd{
+        font-size: 30px;
+    }
+    .home span{
+        font-size: 30px;
+    }
+    .home .lonk{
+        font-size: large;
+    }
+}

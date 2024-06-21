@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 20px;
+    margin-top: 2.5vh;
+    width: 90vw;
+    margin-left: 4vw;
+    /* text-align: center; */
+}
+.contact .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 90vw;
+    /* height: 100vh; */
+}
+.contact .pp{
+    font-size: small;
+}
+
+.contact .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.l,.r,.email,.text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+input{
+    padding: 18px;
+    font-size: x-large;
+}
+label{
+    font-size: xx-large;
+}
+textarea{
+    padding: 16px;
+    font-size: x-large;
+}
+button{
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    display: flex;
+    margin-left: 12vw;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* margin-top: 2vh; */
+    margin-bottom: 2vh;
+
+}
+.icons .icon:nth-child(1) a {
+    color: black; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(1) a:hover {
+    color: darkorange; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(2) a {
+    color: black; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(2) a:hover {
+    color: purple; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(3) a {
+    color: black; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(3) a:hover {
+    color: blue; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(4) a {
+    color: black; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(4) a:hover {
+    color: darkgreen; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(5) a {
+    color: black; /* Change the color as needed */
+  }
+  .icons .icon:nth-child(5) a:hover {
+    color: red; /* Change the color as needed */
+  }
+.icon{
+   cursor: pointer;
+}
+.contact h1{
+    font-size: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .contact{
+        height: 100vh;
+        gap: 4rem;
+        margin-top: -4vh;
+    }
+    .first{
+        flex-direction: column;
+        margin-left: -6vw;
+        gap: 0;
+    }
+    input,textarea{
+        padding: 15px;
+        font-size: small;
+        width: 70vw;
+    }
+    .l input{
+        width: 70vw;
+    }
+    .right{
+        flex-direction: column;
+        gap: 0;
+    }
+    label{
+        font-size: smaller;
+    }
+    button{
+        width: 40vw;
+    }
+    .contact h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .email{
+        margin-left: -6vw;
+    }
+    .text{
+        margin-left: -6vw;
+    }
+    .contact .right{
+gap: 0.1rem;
+    }
+    .contact button{
+        padding: 8px;
+        width: 30vw;
+        margin-left: 18vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .contact .icon{
+        height: 4vh;
+        width: 4vh;
+    }
+    .contact .icons{
+        margin-left: -8vw;
+        margin-top: 4vh;
+    }
+}

@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.projects{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100vw;
+}
+.projects .h1{
+  font-size: 60px;
+}
+.projects .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 20px;
+  border: black solid 5px;
+  border-radius: 1rem;
+}
+.projects .img{
+  flex: 1;
+  /* height: 100vh; */
+  /* width: 50vw; */
+}
+.projects .descriptions{
+  flex: 1;
+  /* height: 100vh; */
+  /* width: 50vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+
+}
+.projects .description p{
+  font-size: large;
+}
+.projects .links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.projects .link{
+  height: 5vh;
+  width: 8vw;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: blueviolet;
+  background-color: white;
+}
+.projects .link:hover{
+  color: white;
+  background-color: rgb(153, 0, 255);
+
+}
+.projects .link span{
+  font-weight: 200;
+}
+.projects .link a span{
+  color: black;
+}
+.projects .link a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .down{
+  margin-top: -1vh;
+  gap: 5rem;
+  display: flex;
+  flex-direction: row;
+  
+}
+.projects .down img{
+  height: 7vh;
+  cursor: pointer;
+  
+  
+}
+.projects .img img{
+  height: 50vh;
+}
+@media screen and (max-width: 768px) {
+  
+  /* .projects{
+    height: 100%;
+    width: 100%;
+  } */
+  /* .projects .h1{
+    font-size: 50px;
+  }
+  .projects .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 30vw;
+    
+
+  }
+  .projects .img{
+    visibility: hidden;
+  } */
+  .projects{
+    height: 100%;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 20px;
+}
+.projects .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+}
+.skills .box{
+    flex-direction: column;
+    height: 100%;
+    /* width: 100%; */
+
+}
+.projects .h1{
+    font-size: 40px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.projects .img img{
+    height: 30vh;
+    width: 40vh;
+}
+.projects .kk{
+    font-size: 30px;
+}
+.projects .link a span{
+  font-size: small;
+  color: black;
+  
+}
+.projects .link a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .link{
+  width: 25vw;
+  
+}
+.projects .down{
+  margin-top: -17vh;
+  margin-bottom: 10vh;
+}
+  
+}

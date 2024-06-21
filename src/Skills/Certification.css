@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5px;
+
+}
+thead tr{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    height: 5vh;
+    width: 80vw;
+    border: 5px solid black;
+    border-radius: 2rem;
+    font-size: xx-large;
+    
+}
+tr{
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+    height: 5vh;
+    width: 80vw;
+    border: 1px solid black;
+    gap: 10rem;
+    /* padding: 20px; */
+    font-size: x-large;    
+}
+tbody{
+    /* gap: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    table {
+        width: 95vw;
+        height: 85vh;
+        margin-bottom: 10vh;
+        margin-top: -5vh;
+    }
+
+    thead tr {
+        display: none; /* Hide header row on small screens */
+    }
+
+    tr {
+        flex-direction: row; /* Switch back to row layout for table rows */
+        gap: 0.5rem;
+    }
+
+    td {
+        flex: 1; /* Make cells take full width in mobile view */
+    }
+    .id{
+        display: none;
+    }
+}
